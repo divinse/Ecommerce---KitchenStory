@@ -1,0 +1,13 @@
+<h2 style="text-align: center;color: aliceblue;">Total Bill</h2>
+<table class="card" style="color: rgb(0, 0, 0);align-items: stretch;
+justify-content: center;
+display: grid;">
+    <tr  *ngFor="let item of fakeArray let i = index ">
+    <td>Name : {{cartproduct[i].pname}}</td>
+     <td>Price : {{cartproduct[i].pprice}}</td>
+     <td>Quantity : {{cartproduct[i].ordquant}}</td>
+    </tr>
+
+    <tr><td>Grand Total : </td><td rowspan="2">{{totalval}}</td><TD><button class="btn btn-primary">Check Out</button></TD></tr>
+ </table>
+ 

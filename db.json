@@ -1,0 +1,101 @@
+{
+  "admin": [
+    {
+      "pass": "s",
+      "id": 1,
+      "name": "Admin",
+      "repass": "s"
+    },
+    {
+      "name": "Admin",
+      "pass": "55",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "name": "",
+      "pass": "",
+      "id": 1
+    },
+    {
+      "name": "Appu",
+      "pass": "appu",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "pname": "Burger",
+      "pdesc": "Spicy burger with added chessee and vegies loaded",
+      "pprice": "150",
+      "pquant": "2",
+      "rating": "4.7",
+      "purl": "/assets/images/1.jpg",
+      "id": 1
+    },
+    {
+      "pname": "French Fries",
+      "pdesc": "Smashed potato chosen properly and tinkled with salts",
+      "pprice": "200",
+      "pquant": "3",
+      "rating": "4.5",
+      "purl": "/assets/images/2.jpg",
+      "id": 2
+    },
+    {
+      "pname": "Veg Rolls",
+      "pdesc": "Well selected vegies rolled on well backed rotis and decorated with myonese",
+      "pprice": "250",
+      "pquant": "5",
+      "rating": "5",
+      "purl": "/assets/images/3.jpg",
+      "id": 3
+    },
+    {
+      "pname": "Samosa",
+      "pdesc": "Best Food to taste spice with sos",
+      "pprice": "50",
+      "pquant": "50",
+      "rating": "5",
+      "purl": "/assets/images/4.jpg",
+      "id": 4
+    },
+    {
+      "pname": "Hamburger",
+      "pdesc": "Best Food to taste spice with hot sos ",
+      "pprice": "150",
+      "pquant": "50",
+      "rating": "3",
+      "purl": "/assets/images/5.jpg",
+      "id": 5
+    },
+    {
+      "pname": "haofeien",
+      "pdesc": "Best Food to taste spice with hot sos ",
+      "pprice": "200",
+      "pquant": "50",
+      "rating": "4.7",
+      "purl": "/assets/images/6.jpg",
+      "id": 6
+    },
+    {
+      "pname": "pizza",
+      "pdesc": "Best pizza to try never miss it ",
+      "pprice": "300",
+      "pquant": "15",
+      "rating": "4.0",
+      "purl": "/assets/images/8.jpg",
+      "id": 7
+    },
+    {
+      "pname": "Gobi",
+      "pdesc": "Best gobi manchuri to try never miss it never regret",
+      "pprice": "70",
+      "pquant": "15",
+      "rating": "4.0",
+      "purl": "/assets/images/9.jpg",
+      "id": 8
+    }
+  ]
+}

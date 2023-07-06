@@ -1,0 +1,19 @@
+<div class="row card productdet" *ngIf="productdata">
+<div >
+    <img src="{{productdata.purl}}">
+</div>
+<div>
+    <div class="details">
+        <h1>Name : {{productdata.pname}}</h1>
+        <h5>Price : {{productdata.pprice | currency:'INR':'symbol-narrow'}}</h5>
+        <h5>Description : {{productdata.pdesc}}</h5>
+        <h5>Rating : {{productdata.rating}}</h5>
+        <button class="btn btn-primary" (click)="addtocart()">Add to Cart</button>
+        <button  class="btn btn-success" (click)="handleQuantity('plus')">+</button>
+        <input type="text" value="{{productquan}}" class="btn btn-primary" style="width:50px"/>
+        <button class="btn btn-danger" (click)="handleQuantity('min')">-</button>
+    </div>
+
+</div>
+
+</div>

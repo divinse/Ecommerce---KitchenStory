@@ -1,0 +1,10 @@
+<form #updateproduct="ngForm" (ngSubmit)="submit(updateproduct.value)">
+    <input type="text" name="pname" placeholder="Enter Product name" ngModel="{{productdata?.pname}}"/><br>
+    <textarea type="text" name="pdesc"placeholder="Enter Product description" ngModel="{{productdata?.pdesc}}"></textarea><br>
+    <input type="text" name="pprice"placeholder="Enter product price" ngModel="{{productdata?.pprice}}"/><br>
+    <input type="text" name="pquant"placeholder="Enter Product quantity" ngModel="{{productdata?.pquant}}"/><br>
+    <input type="text" name="purl"placeholder="Enter Product url" ngModel="{{productdata?.purl}}"/><br>
+    <button>Update Product</button>
+    <p>{{updateproductstatus}}</p>
+    </form>
+     

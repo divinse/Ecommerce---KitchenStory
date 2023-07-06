@@ -1,0 +1,27 @@
+<div class=" shadow p-3 mb-5 bg-body rounded card adminauth formss">
+
+    <div class="signup" *ngIf="!showlogin">
+        <h1>User Sign Up</h1>
+    <form #usersugnup="ngForm" (ngSubmit)="signup(usersugnup.value)">
+        <input class="form-control" type="text" placeholder="Username" name="name" ngModel/>
+        <input class="form-control" type="password" placeholder="password" name="pass"ngModel/><br>
+        <button class="btn btn-primary" >Signup</button>
+
+        <p>Already have account ? <a class="clickher" (click)="openlogin()">Click here</a></p>
+    </form>
+
+    </div>
+    
+
+    <div class="login"  *ngIf="showlogin">
+        <h1>User login</h1>
+        <form #userlogin="ngForm" (ngSubmit)="login(userlogin.value)">
+            <input class="form-control" type="text" placeholder="Username" name="name" ngModel/>
+            <input class="form-control" type="password" placeholder="password" name="pass"ngModel/><br>
+            <button class="btn btn-primary" >Login </button>
+            <p>Don't have account ? <a class="clickher"  (click)="opnsignup()">Click here</a></p>
+        </form>
+
+        
+    </div>
+</div>

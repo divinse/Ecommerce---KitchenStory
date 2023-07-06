@@ -1,0 +1,49 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.sugres{
+  position: absolute;
+  display: list-item !important;
+  z-index: 10;
+  background-color: white;
+  width: 300px;
+  top: 40px;
+}
+.logo{
+  font-family: cursive;
+  font-size: x-large;
+  font-weight: bold;
+  color: darksalmon;
+  margin:5px;
+  padding: 2px;
+
+}
+.Searchbar{
+    align-items: center;
+    border: 1px solid;
+    border-radius: 25px;
+
+}
+
+.Searchbartxt{
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+
+}
+
+
+.Searchbarbtn {
+  margin: 1px;
+  border: none;
+  text-align: center;
+  
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: gainsboro;
+}

@@ -1,0 +1,13 @@
+<div class="addpr card">
+<form #addproduct="ngForm" (ngSubmit)="submit(addproduct.value)"><br>
+<input type="text" class="form-control" name="pname" placeholder="Enter Product name" ngModel/>
+<textarea type="text" class="form-control" name="pdesc"placeholder="Enter Product description" ngModel></textarea>
+<input type="text" class="form-control" name="pprice"placeholder="Enter product price" ngModel/>
+<input type="text" class="form-control" name="pquant"placeholder="Enter Product quantity" ngModel/>
+<input type="text" class="form-control" name="rating"placeholder="Enter Product rating" ngModel/>
+<input type="text" class="form-control" name="purl"placeholder="Enter Product url" ngModel/><br>
+<button class="btn  btn-primary" >Add Product</button>
+<p>{{addproductstatus}}</p>
+</form>
+</div>
+ 

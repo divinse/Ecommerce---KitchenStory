@@ -1,0 +1,10 @@
+<div class=" shadow p-3 mb-5 bg-body rounded card adminauth">
+  <h1>Admin Login</h1>
+  <form #adminlogin="ngForm" (ngSubmit)="login(adminlogin.value)">
+    <input class="form-control" type="text" ngModel name="name" placeholder=" Username " />
+    <input  class="form-control"type="password" ngModel name="pass" placeholder=" Password " /><br>
+    <button class="btn btn-primary">Login</button><br>
+    <p class="alert">{{authError}}</p>
+  </form>
+
+</div>

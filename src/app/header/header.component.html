@@ -1,0 +1,40 @@
+<nav class="nav">
+  <h1 class="logo">My Kitchen</h1>
+  <div *ngIf="menuType==='default'" class="Searchbar">
+    <input   class="Searchbartxt"type="text" #searchInput (keyup)="findcomp($event)" (blur)="hideserch()" placeholder="Type to start"/>
+    <button  class="Searchbarbtn" (click)="subserch(searchInput.value)">Search</button>
+    <ul class="sugres" *ngIf="sercresult">
+      <li *ngFor="let item of sercresult">
+       <a href="" (mousedown)="redirectToDetail(item.id)">{{item.pname}}</a> 
+      </li>
+    </ul>
+  </div>
+
+  <div [ngSwitch]="menuType">
+    <ul class="nav"  *ngSwitchCase="'default'" >
+      <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="admin">Admin</a></li>
+      <li class="nav-item"><a  class="nav-link" routerLink="/user-auth">Login/Signup</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+    </ul>
+
+    <ul class="nav"  *ngSwitchCase="'user'" >
+      <li class="nav-item" style="color: white;">Welcome {{username}}</li>
+      <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="" (click)="logut()">Logout</a></li>
+      <li class="nav-item"><a class="nav-link" href="/cartpg">Cart(  {{cartitem}} )</a></li>
+    </ul>
+    
+    <ul class="nav"  *ngSwitchCase="'admin'" >
+      <li class="nav-item" style="color: azure;border: 2px solid:white;"> Administrator console </li>
+      <li class="nav-item"><a class="nav-link" href="/admin-pass">Change Password </a></li>
+      <li class="nav-item"><a class="nav-link" href="/admin-home">Product list</a></li>
+      <li class="nav-item"><a class="nav-link" href="/adminaddproduct">Add Product</a></li>
+      <li class="nav-item"><a class="nav-link" href="" (click)="logout()">Logout</a></li>
+    </ul>
+
+
+  </div>
+ 
+
+</nav>

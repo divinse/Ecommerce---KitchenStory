@@ -1,0 +1,38 @@
+<ngb-carousel *ngIf="populateproducts">
+	<ng-template *ngFor="let item of populateproducts" ngbSlide>
+		<div class="picsum-img-wrapper">
+			<a routerLink="/details/{{item.id}}"><img src="{{item.purl}}" class="imgslide"/></a>
+		</div>
+		<div class="carousel-caption bgset">
+			<h3>{{item.pname}}</h3>
+			<p>{{item.pdesc}}</p>
+		</div>
+	</ng-template>
+</ngb-carousel>
+
+<h1 class="divider">Dishes</h1>
+
+<div class="prodictswap">
+	
+	<div class="row certrr">
+		<div class="col-sm-2 card partss" *ngFor="let item of fullproduct">
+			<div class="icon">
+				<img src="{{item.purl}}" />
+			</div>
+			<div class="details">
+				<h6 class="name-head">{{item.pname}}</h6>
+				<div class="pric">
+					<h6> {{item.pprice | currency:'INR':'symbol-narrow'}}</h6>
+				</div>
+				<div class="rat">
+					<h6>{{item.rating}}/5</h6>
+				</div>
+			</div>
+			<div class="footers">
+				<a href="" routerLink="/details/{{item.id}}">View Details</a>
+				<a href="">Add to Cart</a>
+			</div>
+		</div>
+	</div>
+
+</div>
